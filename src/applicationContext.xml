@@ -12,10 +12,14 @@
 		class="com.itamar.springdemo.HappyFortuneService">
 	</bean>
 
-	<bean id="myCoach" 
-	    class="com.itamar.springdemo.TrackCoach">
-	    <constructor-arg ref="myFortune" />
+	<bean id="myCoach" class="com.itamar.springdemo.TrackCoach">
+		<constructor-arg ref="myFortune" />
 	</bean>
+
+	<bean id="myCricketCoach" class="com.itamar.springdemo.CricketCoach">
+	<property name="fortuneService" ref="myFortune"/>
+	    </bean>
+
 </beans>
 
 
