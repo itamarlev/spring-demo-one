@@ -14,8 +14,10 @@ public class HelloSpringApp {
 
 		// run some methods
 		System.out.println(myCoach.getDailyWorkout());
+		System.out.println(myCoach.getDailyFortune());
 
-		// close the ontext
+
+		// close the context
 		context.close();
 
 	}
